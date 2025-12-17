@@ -52,3 +52,60 @@ Mejora la seguridad evitando contenido no cifrado.
 Forma parte de las Client Hints, diseñadas para mejorar la privacidad frente al User-Agent tradicional.
 Permite al servidor adaptar el contenido de forma más controlada.
 
+## Parte 3: Fotografía de las característa DNS del sitio Web
+
+### Petición GET - 200
+
+![URL A](/CapturaGET-200-2.png)
+
+
+### Petición GET - 404
+
+![URL B](/CapturaGET-404-2.png)
+
+## Análisis de los elementos capturados:
+
+**Date**: Permite concoer el momento exacto en el que se produca la respuesta
+
+**Server**: Proporciona información sobre la tecnologóa usada por el servidor.
+
+**Content-Type**: Indica el formate del mensaje de error devuelto al cliente.
+
+**Keep-Alive**: Es una cabecera que permite mantener abierta la conexión TCP entre el cliente y el servidor después de una petición HTTP.
+
+**Pragma**: Se utiliza principalmente con el valor no-cache para indircar que la respuesta no debe almacenarse.
+
+### DNS Lookup de librebits.info 
+
+![DNS librebits](/Librebit-DNS.png)
+
+### Informacion del DNS
+
+**Parent nameservers**: Indica los servidores DNS superiores responsables del dominio.
+
+En este caso, pertenecen a Gandi.net, lo que significa que el dominio está gestionado por este proveedor
+
+**NS**: Los registros NS definen los servidores autoritativos del dominio.
+
+La coincidencia entre los NS del dominio y los del nivel padre confirma una configuración DNS correcta y coherente.
+
+**SPF**: Este registro define qué servidores están autorizados a enviar correos en nombre del dominio, ayudando a prevenir la suplantanción de identidad.
+
+
+**ASN**: El sistema autónomo asociado es AS60781, correspondiente a LeaseWeb Netherlands B.V. Esto identifica la red a la que pertenece al servidor y su proveedor de conectividad.
+
+## Parte 4: Comparación con otros recursos
+
+### Petición a un PNG
+
+![Captura png](/CapturaAdicional-1.png)
+
+### Petición a un CSS
+
+![Captura css](/CapturaAdicional-2.png)
+
+### Diferencias en el Content-Type
+
+**PNG**: Su Content-Type es **image/png**. Este indica que el recurso es una imagen binaria que el navegador debe decodificar y mostrar visualmente, no interpretar como texto.
+
+**CSS**: Su Content-Type es **text/css**. Señala que el recurso es un archivo de texto que contiene reglas de estilo que el navegador dane interpretar y aplicar al documento  HTML.
