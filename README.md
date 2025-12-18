@@ -65,11 +65,11 @@ Permite al servidor adaptar el contenido de forma más controlada.
 
 ## Análisis de los elementos capturados:
 
-**Date**: Permite concoer el momento exacto en el que se produca la respuesta
+**Date**: Permite concocer el momento exacto en el que se produca la respuesta
 
-**Server**: Proporciona información sobre la tecnologóa usada por el servidor.
+**Server**: Proporciona información sobre la tecnología usada por el servidor.
 
-**Content-Type**: Indica el formate del mensaje de error devuelto al cliente.
+**Content-Type**: Indica el formato del mensaje de error devuelto al cliente.
 
 **Keep-Alive**: Es una cabecera que permite mantener abierta la conexión TCP entre el cliente y el servidor después de una petición HTTP.
 
